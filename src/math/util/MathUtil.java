@@ -36,5 +36,22 @@ public class MathUtil {
         
         System.out.println("Chuc cuoi tuan thu 9 vui ve");
     }
+    //Mình muốn kết luận hàm mình ngon, mình phải test các trường hợp xài hàm
+    //trường hợp 
+    //mình phải thiết kế các test case, tình huống test để sau đó mình verify
+    //giữa giá trị trả về của hàm(actual) có khớp với expected cái mình dự đoán hàm chạy phải trả về và nếu mọi thứ khớp, tức là actual==expected
+    //mình mới dám gáy hàm ngon
+    //
+    //Cách này ổn, nhưng tiềm ẩn sai sót do nhìn == mắt nhiều case
     
+    //Cách nâng cao
+    // Cũng nhìn bằng mắt, nhưng chỉ nhìn 2 màu xanh đỏ cho mọi test case
+    // có nghĩa: nếu bạn xài hàm với 100 tham số, chạy hàm 100 tình huống khác nhau
+    //bạn chỉ cần nhìn duy nhất 2 màu xanh đỏ
+    //xanh, code ổn cho mọi test case, mọi tình huống gọi hàm
+    // đỏ, mọi case màu xanh, chỉ có ít nhất 1 thằng đỏ, kết luận cả đám đỏ
+    // hàm đúng cho 99 trường hợp, expected=actual cho 99% tình huống
+    // chỉ có 1 tình huống sai, ko khớp, kết luận luôn, hàm không ổn định
+    // ai dám sài khi không ổn định, ổn định và chính xác cho mọi trường hợp
+    //CHỈ CẦN ÍT NHẤT 1 CÁI KHÔNG ỔN, ĐỎ CẢ ĐÁM ĐỂ ĐẢM BẢO RẰNG HÀM 
 }

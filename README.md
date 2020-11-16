@@ -7,6 +7,6 @@
 * ...
 
 ## Connect me via
-[Facebook](http://facebook.com/khanhhoanguyen)
+[Facebook](http://facebook.com/khanhhoa.nguyen.9404362)
 
 #### ©2020 by khanhhoa
