@@ -34,7 +34,7 @@ public class MathUtil {
         //IllegalArgumentException nếu tao cố tình, người xài hàm này của tao đưa tham số âm, tham số >20
         System.out.println("expected: IllegalArgumentException" + MathUtility.getFactorial(-5));
         
-        System.out.println("Chuc cuoi tuan thu 9 vui ve");
+        System.out.println("I want to see the RED or GREEN!!!");
     }
     //Mình muốn kết luận hàm mình ngon, mình phải test các trường hợp xài hàm
     //trường hợp 
