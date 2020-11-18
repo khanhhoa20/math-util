@@ -26,23 +26,42 @@ public class MathUtility {
     bài này chăn giai thừa từ 0-20
     
      */
-    public static long getFactorial(int n) {
-        if (n < 0 || n > 20) {
-            throw new IllegalArgumentException("n must be between 0...20");
-        }
-        if (n == 0 || n == 1) {
-            return 1;
-        }
+//    public static long getFactorial(int n) {
+//        if (n < 0 || n > 20) {
+//            throw new IllegalArgumentException("n must be between 0...20");
+//        }
+//        if (n == 0 || n == 1) {
+//            return 1;
+//        }
+//
+//        /*
+//        đứa nào viết else ở đây trừ điểm
+//        mặc nhiên CPU đến đc đây là hiểu rằng n=2...20
+//         */
+//        long result = 1;
+//        for (int i = 2; i <= n; i++) {
+//            result *= i;
+//        }
+//        return result;
 
-        /*
-        đứa nào viết else ở đây trừ điểm
-        mặc nhiên CPU đến đc đây là hiểu rằng n=2...20
-         */
-        long result = 1;
-        for (int i = 2; i <= n; i++) {
-            result *= i;
+//    }
+   //viet ham de quy cho pro 
+public static long getFactorial(int n){
+    if(n<0||n>20){
+    throw new IllegalArgumentException("n must be between 0...20");
+       }
+    if(n == 0 || n == 1) {
+            return 1;//để dùng
         }
-        return result;
-    }
+    return n*getFactorial(n-1);//đệ quy đó
+    //gọi lại chính hàm của mình với quy mô khác, n-1
+    //đi mãi về 1
+    
 
 }
+}
+//5!=5*4!,...2!=2*1!, 1!=1
+//đệ quy là gọi lại mình với quy mô nhỏ hơn
+//kết luận n!=n*(n-1)!
+// phải có dừng, ko thì lặp vô tận
+
